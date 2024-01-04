@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Site de vente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Rubik+Lines&family=Rubik+Scribble&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="About.html"><img src="LOGO.png"></a>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <a href="#" id="openBtn">
+                            <span class="burger-icon">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </span>
+                          </a>
+                        <li class="first"><a href="About.html"> Accueil</a></li>
+                        <li class="first"><a href="produits.html"> Produits</a></li>
+                        <li class="first"><a href="conditions.html"> Conditions</a></li>
+                        <li class="first"><a href="contact.html"> Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">×</a>
+                        <a href="About.html"> Accueil</a>
+                        <a href="produits.html"> Produits</a>
+                        <a href="conditions.html"> Conditions</a>
+                        <a href="contact.html"> Contact</a>
+                    </ul>
+                  </div>
+            </nav>
+            <article>
+                <h1 class="condition">Nos conditions générales de vente</h1>
+                    <p class="cgv"><strong>1.Prix : </strong>Les prix des produits sont indiqués en ariary.</p>
+                    <p class="cgv"><strong>2.Paiement : </strong>Les paiements se font à la livraison, en liquide ou par mobile money.</p>
+                    <p class="cgv"><strong>3.Livraison : </strong>Les frais de livraison sont à la charge du client.</p>
+                    <p class="cgv"><strong>4.Service client : </strong>Pour toute question, rendez-vous dans la section "Contact".</p>
+            </article>
+            <script>
+                var sidenav = document.getElementById("mySidenav");
+                var openBtn = document.getElementById("openBtn");
+                var closeBtn = document.getElementById("closeBtn");
+
+                openBtn.onclick = openNav;
+                closeBtn.onclick = closeNav;
+
+                /* Set the width of the side navigation to 250px */
+                function openNav() {
+                sidenav.classList.add("active");
+                }
+
+                /* Set the width of the side navigation to 0 */
+                function closeNav() {
+                sidenav.classList.remove("active");
+                }
+            </script>
+    </header>
+
+    <footer>
+        &copy; 2023 - Chic Second Hand MG - Tous droits réservés.
+    </footer>
+</body>
+</html>
